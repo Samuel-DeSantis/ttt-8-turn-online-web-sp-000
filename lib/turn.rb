@@ -40,7 +40,7 @@ def turn(board)
 
   validated_input = input_to_index(input)
   if (valid_move?(board, validated_input))
-    move(board, validated_input, value[0])
+    move(board, validated_input)
   else
     until (valid_move?(board, validated_input))
       puts "Please enter 1-9:"

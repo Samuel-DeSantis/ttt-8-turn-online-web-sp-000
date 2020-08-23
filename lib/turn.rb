@@ -7,9 +7,9 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  input_i = input.to_i
-  input_i -= 1
-  return input_i
+  input = input.to_i
+  input -= 1
+  return input
 end
 
 def position_taken?(board, index)

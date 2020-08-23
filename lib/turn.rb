@@ -44,7 +44,7 @@ def turn(board)
     display_board(board)
   else
     while (valid_move?(board, validated_input))
-      #puts "Please enter 1-9:"
+      puts "Please enter 1-9:"
       input = gets.strip
 
       validated_input = input_to_index(input)

@@ -45,7 +45,7 @@ def turn
   if (valid_move?(board, input))
     move(board, input, value[0])
   else
-    while (valid_move?(board, input))
+    until (valid_move?(board, input))
       puts "Please enter 1-9:"
       input = gets.strip
     end

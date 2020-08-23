@@ -8,7 +8,8 @@ end
 
 def input_to_index(input)
   input_i = input.to_i
-  return --input_i
+  --input_i
+  return input_i
 end
 
 def valid_move?(board, index)

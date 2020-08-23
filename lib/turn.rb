@@ -42,7 +42,7 @@ def begin
 end
 
 def turn(board)
-  begin()
+  begin
   if (valid_move?(board, validated_input))
     move(board, validated_input)
     display_board(board)

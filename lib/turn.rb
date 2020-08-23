@@ -49,5 +49,6 @@ def turn(board)
 
       validated_input = input_to_index(input)
     end
+    display_board(board)
   end
 end

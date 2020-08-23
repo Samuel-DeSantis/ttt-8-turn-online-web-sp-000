@@ -20,10 +20,10 @@ end
 
 def turn()
   board = [" ", " ",  " ",  " ",  " ",  " ",  " ",  " ",  " "]
-  
+
   puts " Pleaser enter 1-9: "
   input = gets.strip
-  
+
   input = input_to_index(input)
   valid_move?(board, input)
 end

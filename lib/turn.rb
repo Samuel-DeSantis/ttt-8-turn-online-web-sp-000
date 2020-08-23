@@ -34,11 +34,15 @@ def move(board, index, value = "X")
   board[index] = value
 end
 
-def turn(board)
+def begin
   puts "Please enter 1-9:"
   input = gets.strip
 
   validated_input = input_to_index(input)
+end
+
+def turn(board)
+  begin()
   if (valid_move?(board, validated_input))
     move(board, validated_input)
     display_board(board)

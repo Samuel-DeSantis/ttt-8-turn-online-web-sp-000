@@ -39,7 +39,7 @@ def turn(board)
   input = gets.strip
 
   input_to_index(input)
-  puts input
+  puts input_to_index(input)
   if (valid_move?(board, input))
     move(board, input, value[0])
   else
